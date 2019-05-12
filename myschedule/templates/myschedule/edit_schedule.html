@@ -4,10 +4,10 @@
 <body>
     <h1>Update Schedule</h1>
     <form method="POST">
-        {% crsf_token %}
+        {% csrf_token %}
         {{ form.as_p }}
         <button type = 'submit'>SAVE</button>
     </form>
 </body>
 
-{% endbloock %}
+{% endblock %}
