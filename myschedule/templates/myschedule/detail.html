@@ -1,0 +1,14 @@
+{% extends 'myschedule/base.html' %}
+{% block content %}
+<body>
+    <h1>Detail Page</h1>
+        <div>
+            <h2>{{schedule.title}}</h2>
+            <p>{{schedule.memo}}</p>
+            <p>{{schedule.schedule_date}}</p>
+            <a href="{% url 'edit' schedule.id %}">Update</a>
+            <a href="{% url 'delete' schedule.id %}">Delete</a>
+        </div>
+</body>
+
+{% endblock %}

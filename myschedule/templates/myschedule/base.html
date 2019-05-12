@@ -1,0 +1,15 @@
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'css/myschedule.css' %}">
+</head>
+
+<body>
+    <h1><strong>APPLE</strong></h1>
+    <img src="{% static 'img/iphone.jpg' %}" height='300px' alt="">
+    <div>
+        <a href="{% url 'home' %}">Back to home</a>
+        <a href="{% url 'new' %}">new schedule</a>
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
